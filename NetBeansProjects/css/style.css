@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navigation{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+ul{
+    margin-left: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    margin: 0 10px;
+
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../Keaobaka Kgaudi/public_html/Images/pang-yuhao-_kd5cxwZOK4-unsplash.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.banner-inner{
+    width: 700px;
+    text-align: center;
+}
+
+.banner-inner h1{
+    transition: all ease-in .6s;
+}
+
+.info-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+.info{
+    position: absolute;
+    width: 600px;
+    top: -3rem;
+}
