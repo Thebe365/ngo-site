@@ -240,6 +240,17 @@ footer{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     backdrop-filter: blur(5px);
     display: none;
+    /* animation: display-modal .5s forwards; */
+    transition: opacity .5s;
+}
+
+@keyframes display-modal {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .image-modal{
@@ -252,6 +263,19 @@ footer{
     height: 70%;
     background-color: white;
     display: none;
+    /* animation: image-display .7s forwards; */
+    transition: opacity .5s;
+}
+
+@keyframes image-display {
+    0%{
+        opacity: 0;
+        margin-top: 30px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
 }
 
 .image-modal img{

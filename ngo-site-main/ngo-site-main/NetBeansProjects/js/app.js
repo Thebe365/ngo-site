@@ -23,7 +23,16 @@ function openModal(){
 }
 
 function closeModal(){
-    modal.style.display = "none"
-    backdrop.style.display = "none"
-    document.body.style.overflow = 'visible';
+
+    modal.style.opacity = 0
+    backdrop.style.opacity = 0
+
+    setTimeout(function() {
+        modal.style.display = "none";
+        backdrop.style.display = "none"
+        document.body.style.overflow = 'visible';
+    }, 1000);
+    // modal.style.display = "none"
+    // backdrop.style.display = "none"
+    
 }
