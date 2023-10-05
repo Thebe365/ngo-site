@@ -45,7 +45,20 @@ li{
 }
 
 .banner1{
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../Keaobaka Kgaudi/public_html/Images/kate-macate-xmddEHyCisc-unsplash.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../Keaobaka Kgaudi/public_html/Images/melinda-gimpel-5Ne6mMQtIdo-unsplash.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    /* padding: 2rem 3rem; */
+    align-items: center;
+    justify-content: center;  
+}
+
+.banner2{
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url("../Keaobaka Kgaudi/public_html/Images/school-7012848_1280.png");
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,7 +190,22 @@ form{
 footer{
     background-color: #352F44;
     color: white;
-    padding: 10px 3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer i{
+    margin: 5px;
+}
+
+.socials{
+    display: flex;
+}
+
+.social-link{
+    margin: 10px;
 }
 
 .note{
@@ -240,6 +268,7 @@ footer{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
     backdrop-filter: blur(5px);
     display: none;
+    opacity: 0;
     /* animation: display-modal .5s forwards; */
     transition: opacity .5s;
 }
@@ -263,6 +292,7 @@ footer{
     height: 70%;
     background-color: white;
     display: none;
+    opacity: 0;
     /* animation: image-display .7s forwards; */
     transition: opacity .5s;
 }
@@ -285,3 +315,72 @@ footer{
     object-position: center;
 }
 
+/* INVOLVE US SECTION */
+.involve-us-form{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    padding: 2rem 3rem;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-inner{
+    width: fit-content;
+    color: white;
+    background-color: #22223b;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: inline;
+}
+
+.involve-us-form input[type=text]{
+    width: 300px;
+    margin: 10px 0;
+    padding: 7px 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.involve-us-form input[type=submit]{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: #352F44;
+    color: white;
+    margin-top: 1rem;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+.involve-us-form input[type=submit]:hover{
+    background-color: #5C5470;
+    cursor: pointer;
+}
+
+.involve-us-form h2{
+    text-align: center;
+}
+
+/* ABOUT US SECTION */
+.about-us-section .info{
+    height: 300px;
+}
+.about-us-section .info-container:nth-child(odd){
+    flex-direction: row-reverse;   
+}
+
+.info-container:nth-child(odd) .info{
+    margin-right: -20px;
+    z-index: 2;
+}
